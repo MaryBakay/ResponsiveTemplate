@@ -1,0 +1,320 @@
+body, ul, ol{
+	margin:0;
+	padding:0;
+	font: 14px Arial, sans-serif;
+}
+.wrapper{
+	margin: 0 auto;
+	max-width: 1024px;
+}
+header{
+	background-color: #373c3f;
+	width:100%;
+}
+ul.main-menu {
+	list-style: none;
+	margin-left: 53px;
+
+}
+ul.main-menu li{
+	display: inline-block;
+	
+	margin-right: 25px;
+}
+ul.main-menu li a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.0714em;
+	font-weight: bold;
+	display: block;
+	padding: 25% 0;
+}
+ul.main-menu-open{
+	display: block;
+	background-color: #373c3f;
+	opacity: 0.88;
+	position: absolute;
+	top: 75px;
+	right: 0;
+	margin: 0;
+	width:80%;
+	z-index: 2000;
+}
+ul.main-menu-open li{
+	display: block;
+	margin-right: 0;
+}
+ul.main-menu-open li a{
+	z-index: 3000;
+	padding: 4%;
+	border-bottom: 1px solid transparent;
+
+}
+ul.main-menu-open li a:hover{
+	background-color: #52585B;
+	border-bottom: 1px solid #151616;
+	box-shadow:inset 1px -1px 5px #fff;
+}
+.navigation{
+	display:none;
+	float: left;
+	margin-left: 53px;
+}
+.navigation a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 3.4286em;
+	line-height: 75px;
+	
+}
+.banner{
+	background-color: #15b0c3;
+	width:100%;
+	max-height: 575px;
+	
+
+}
+.banner a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	position: relative;
+
+}
+a.banner-text{
+	padding: 16% 0 2% 9%;
+	font-size:4.2857em; /*60/14*/
+	
+}
+a.banner-site{
+	font-size: 2.4286em;
+	padding: 2% 9% 19%;
+	color: #a5d1db;
+}
+a.banner-site:after{
+	background: url("../img/direction_right.png") no-repeat;
+	content: "";
+	display: block;
+	position: absolute;
+	font-size: 2.4286em;
+	top: 7%;
+	left: 80%;
+	color: #fff;
+	height: 25px;
+	width:15px;
+}
+
+.transform-menu{
+	display: none;
+	background-color: #202529;
+	float: right;
+}
+.transform-menu a{
+	text-decoration: none;
+	display: block;
+	max-width: 80px;
+	
+}
+.transform-menu a img{
+	max-height: 20px;
+	min-height: 10px;
+}
+.slogan{
+	width: 100%;
+	background-color: #27212c;
+	position: relative;
+}
+.slogan span{
+	display: block;
+	color: #9282a0;
+	font-size: 2.1429em;
+	padding: 9% 0%;
+	max-height: 245px;
+	float: left;
+	width: 77.7344%;
+	text-align: center;
+}
+.slogan-link{
+	float: right;
+	background-color: #bc3183;
+	display: block;
+	
+	width: 22.2656%;
+	text-align: center;
+}
+.slogan-link a{
+	display: block;
+	padding:48% 0;
+	
+	
+
+}
+.image-container{
+	max-height: 292px;
+	overflow: hidden;
+	background: #5b0fa1;
+}
+.image-container-link{
+	float: left;
+	width: 33.344%;
+	
+	text-align: center;
+
+}
+.image-container-link a{
+	display: block;
+	background: #5b0fa1;
+	padding: 36.3% 0;
+}
+.image-container-item{
+	float: left;
+	width: 33.33%;
+	overflow: hidden;
+}
+.image-container-item img{
+	max-width:342px;
+	display: block;
+
+}
+.text-content{
+	background: #ebebeb;
+	padding: 2% 5%;
+}
+.text-content h1{
+	font-size: 2em;
+	color: #088ca5;
+}
+.text-content p{
+	font-size: 1em;
+	color: #515151;
+}
+
+@media screen and (max-width: 1024px){
+	header{
+		max-height: 95px;
+	}
+	
+}
+
+@media screen and  (max-width: 980px){
+	.banner{
+		max-height: 550px;
+	}
+	.image-container{
+		max-height: 283px;
+		overflow: hidden;
+	}
+	.image-container-item img{
+		max-width:328px;
+		height: auto;
+		width: 100%;
+	}
+
+}
+
+@media screen and  (max-width: 640px){
+	body{
+		font-size: 0.5em;
+	}
+	header{
+		max-height: 75px;
+	}
+	ul.main-menu{
+		display:none;
+	}
+	ul.main-menu-open{
+		display: block;
+	}
+	.navigation{
+		display: block;
+		margin-left: 5.625%;
+	}
+	.banner{
+		max-height: 350px;
+	}
+	.transform-menu{
+		display: block;
+	}
+	.transform-menu a{
+		padding: 26px;
+	}
+	a.banner-text{
+		font-size: 5em;
+	}
+	a.banner-site, a.banner-site:after{
+	font-size: 2.5em;
+	}
+	.slogan span{
+		font-size: 1.9em;
+	}
+	.image-container-item{
+		width: 100%;
+	}
+	.image-container-item img{
+		max-width:640px;
+		height: auto;
+		width: 100%;
+		
+
+	}
+	.image-container-item{
+		clear:both;
+	}
+	.image-container-link a{
+		max-width: 640px;
+		height: auto;
+		width: 100%;
+		padding: 100%;
+	}
+	.text-content h1{
+		font-size: 4em;
+	}
+	.text-content p{
+		font-size: 2em;
+	}
+	.image-container{
+		max-height: 100%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	header{
+		max-height: 35px;
+	}
+	/*.banner{
+		max-height: 175px;
+	}*/
+	.banner a{
+		font-size: 2.75em;
+	}
+	a.banner-site, a.banner-site:after, .slogan span{
+		font-size: 1.5em;
+	}
+	.navigation a{
+		line-height: 35px;
+		font-size: 1.5em;
+	}
+	.transform-menu a{
+		padding: 11px;
+	}
+	.transform-menu a img{
+		max-width: 100%;
+		height:10px;
+	}
+	ul.main-menu-open{
+		top: 35px;
+	}
+	.image-container-item img{
+		max-width:320px;
+	}
+	.image-container-item{
+		clear:both;
+	}
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
