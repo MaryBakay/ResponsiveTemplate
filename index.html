@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Responsive
+		</title>
+ 		<link rel="stylesheet" href="css/style.css" type="text/css">
+ 		<script  type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<ul class="main-menu" id="menu">
+					<li><a href="#" title="">PSD websites</a></li>
+					<li><a href="#" title="">UI kits</a></li>
+					<li><a href="#" title="">premium PSD files</a></li>
+					<li><a href="#" title="">About</a></li>
+					<li><a href="#" title="">Blog</a></li>
+				</ul>
+				<div class="max-width-640 clearfix">
+					<div class="navigation">
+						<a href="#" title="Navigation">Navigation</a>
+					</div>
+					<div class="transform-menu">
+						<a href="#" title="menu" id="main-menu"><img src="img/Icon_menu.png" alt="menu"></a>
+					</div>
+				</div>
+			</header>
+			<div class="banner">
+				<a href="www.BlazRobar.com" title="Go to www.BlazRobar.com" class="banner-text"> Awesome Free PSD<br> templates & Resources</a>
+				<a href="www.BlazRobar.com" title="www.BlazRobar.com" class="banner-site">www.BlazRobar.com</a>
+				
+			</div>
+			<div class="slogan clearfix">
+				<span>I'm like the Robin Hood of PSD files.</span>
+				<div class="slogan-link">
+					<a href="#" title=""><img src="img/direction_right.png"></a>
+				</div>
+			</div>
+			<div class="image-container clearfix">
+				<div class="image-container-link">
+					<a href="#" title="link"><img src="img/direction_right.png"></a>
+				</div>
+				<div class="image-container-item"><img src="img/2.png"></div>
+				<div class="image-container-item"><img src="img/3.png" ></div>
+			</div>
+			<div class="text-content">
+				<h1>BlazRobar.com</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+		</div>
+		<script type="text/javascript">
+		$(function(){
+			$('a#main-menu').click(function(ev){
+				ev.preventDefault();
+				$('ul#menu').toggleClass('main-menu-open');
+				
+
+				
+			});
+			$(window).resize(function(){
+				if ($(document).width() > 640){
+					$('ul#menu').removeClass('main-menu-open');
+				}
+			});
+			//if ($(document).width() > 640) {
+				
+			//};
+			//alert($(document).width());
+
+		})
+		</script>
+	</body>
+</html>
